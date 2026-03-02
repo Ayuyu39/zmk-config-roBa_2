@@ -93,7 +93,7 @@
 &kp Q      &kp W           &kp E         &kp R           &kp T                                                                 &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A      &kp S           &kp D         &kp F           &kp G            &lt 6 LS(LG(ESCAPE))               &kp MINUS         &kp H        &kp J  &kp K      &kp L    &kp SQT
 &kp Z      &kp X           &kp C         &kp V           &kp B            &kp COLON                          &kp SEMICOLON     &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp INT_HENKAN  &lt 2 BACKSPACE  &lt_to_layer_0 3 INT_MUHENKAN      &mt DELETE SPACE  &lt 1 ENTER                             &lt 7 A
+&kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp INT_HENKAN  &lt 2 BACKSPACE  &lt_to_layer_0 3 INT_MUHENKAN      &mt DELETE SPACE  &lt 1 ENTER                             &mt EXCLAMATION QUESTION
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
