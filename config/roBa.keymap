@@ -1,14 +1,12 @@
+#include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <input/processors.dtsi>
 
 #define MOUSE 4 // 各自のマウスレイヤーに合わせて設定
 
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer MOUSE 250>;
-};
+&mkp_input_listener { input-processors = <&zip_temp_layer MOUSE 250>; };
 
 &mt {
     flavor = "balanced";
@@ -97,10 +95,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W           &kp E         &kp R                    &kp T                                                             &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A      &kp S           &kp D         &kp F                    &kp G        &lt 6 LS(LG(ESCAPE))           &kp MINUS             &kp H        &kp J  &kp K      &kp L    &kp SQT
-&kp Z      &kp X           &kp C         &kp V                    &kp B        &kp COLON                      &kp SEMICOLON         &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LANG_ZENKAKUHANKAKU  &lt 2 SPACE  &lt_to_layer_0 3 INT_KANA      &mt DELETE BACKSPACE  &lt 1 ENTER                             &mt EXCLAMATION QUESTION
+&kp Q      &kp W         &kp E    &kp R           &kp T                                                                   &kp Y        &kp U  &lt 5 I    &kp O    &mt LS(LG(S)) P
+&kp A      &kp S         &kp D    &kp F           &kp G        &lt 6 LS(LG(ESCAPE))                      &mt PLUS MINUS   &kp H        &kp J  &kp K      &kp L    &kp SQT
+&kp Z      &kp X         &kp C    &kp V           &kp B        &kp COLON                                 &kp PERIOD       &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL  &kp LEFT_ALT  &kp TAB  &kp LEFT_SHIFT  &lt 2 SPACE  &mt INT_MUHENKAN LANG_ZENKAKUHANKAKU      &lt 3 BACKSPACE  &lt 1 ENTER                             &mt EXCLAMATION QUESTION
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
