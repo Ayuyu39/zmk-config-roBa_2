@@ -69,12 +69,12 @@
             key-positions = <34 35>;
         };
 
-        sub1 {
+        subdivi_one {
             bindings = <&kp LC(NUMBER_1)>;
             key-positions = <0 1>;
         };
 
-        sub2 {
+        subdivi_dov {
             bindings = <&kp LC(NUMBER_2)>;
             key-positions = <2 0>;
         };
