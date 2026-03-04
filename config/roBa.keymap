@@ -68,16 +68,6 @@
             bindings = <&kp LEFT_GUI>;
             key-positions = <34 35>;
         };
-
-        subdivi_one {
-            bindings = <&kp LC(NUMBER_1)>;
-            key-positions = <0 1>;
-        };
-
-        subdivi_dov {
-            bindings = <&kp LC(NUMBER_2)>;
-            key-positions = <2 0>;
-        };
     };
 
     macros {
