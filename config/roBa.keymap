@@ -68,6 +68,11 @@
             bindings = <&kp LEFT_GUI>;
             key-positions = <34 35>;
         };
+
+        sub1 {
+            bindings = <&kp LC(N1)>;
+            key-positions = <0 1>;
+        };
     };
 
     macros {
