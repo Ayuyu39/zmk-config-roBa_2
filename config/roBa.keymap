@@ -80,7 +80,7 @@
         };
 
         scloll_test {
-            bindings = <&to 5>;
+            bindings = <&tog 5>;
             key-positions = <19 20>;
         };
     };
