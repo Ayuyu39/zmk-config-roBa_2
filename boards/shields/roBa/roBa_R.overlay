@@ -50,7 +50,7 @@
     compatible = "nordic,nrf-spim";
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
-    pinctrl-names = "default", "sleep"
+    pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
 
     trackball: trackball@0 {
@@ -63,11 +63,5 @@
 };
 
 &zip_temp_layer {
-    excluded-positions = <
-        16 // J
-        17 // K
-        18 // l
-        28 // M
-        30 // .
-    >;
+    excluded-positions = <16 17 18 28 30 >;
 };
