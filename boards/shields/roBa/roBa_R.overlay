@@ -21,7 +21,7 @@
         device = <&trackball>;
         input-processors = <&zip_temp_layer 8 10000>;
     };
-};j
+};
 
 &pinctrl {
     spi0_default: spi0_default {
