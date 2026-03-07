@@ -36,17 +36,17 @@
 
         shift+tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <11 12>;
+            key-positions = <11 10>;
         };
 
         ctrl+tgab {
             bindings = <&kp LC(TAB)>;
-            key-positions = <12 13>;
+            key-positions = <12 11>;
         };
 
         tab {
             bindings = <&to_layer_0 TAB>;
-            key-positions = <11 10>;
+            key-positions = <13 12>;
         };
 
         double_quotation {
