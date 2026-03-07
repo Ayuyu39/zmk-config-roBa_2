@@ -34,18 +34,18 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
+        shift+tab {
+            bindings = <&kp LS(TAB)>;
             key-positions = <11 12>;
         };
 
-        shift_tab {
+        ctrl+tgab {
             bindings = <&kp LC(TAB)>;
             key-positions = <12 13>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
+        tab {
+            bindings = <&to_layer_0 TAB>;
             key-positions = <11 10>;
         };
 
@@ -57,11 +57,6 @@
         eq {
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
-        };
-
-        ctr_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <10 12>;
         };
 
         windows {
@@ -82,6 +77,11 @@
         mouselook {
             bindings = <&kp A>;
             key-positions = <30 18 20 19 32 21>;
+        };
+
+        scloll_test {
+            bindings = <&to 5>;
+            key-positions = <19 20>;
         };
     };
 
