@@ -139,10 +139,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans        &kp UP_ARROW  &trans         &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &kp LEFT      &kp DOWN      &kp RIGHT      &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &kp LG(LEFT)  &trans        &kp LG(RIGHT)  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                             &trans
+&kp ESCAPE  &kp UP_ARROW            &trans     &kp LC(TAB)              &trans                       &trans  &kp LS(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LS(LG(RIGHT))  &trans
+&kp LEFT    &kp DOWN                &kp RIGHT  &kp HOME                 &kp END  &trans      &trans  &trans  &kp LEFT                &kp DOWN      &kp RIGHT          &trans
+&trans      &kp LG(LC(LEFT_ARROW))  &trans     &kp LG(LC(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &kp LG(LEFT)            &trans        &kp LG(RIGHT)      &trans
+&trans      &trans                  &trans     &trans                   &trans   &trans      &trans  &trans                                                           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -186,11 +186,13 @@
 
         layer_8 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans     &trans                            &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LC(Z)  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp P      &kp X   &kp LEFT_ALT      &trans  &trans                          &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp LEFT_BRACKET RIGHT_BRACKET>;
         };
     };
 };
