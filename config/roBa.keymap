@@ -83,6 +83,16 @@
             bindings = <&mo 5>;
             key-positions = <19 20>;
         };
+
+        substanse_layer {
+            bindings = <&to 8>;
+            key-positions = <11 9>;
+        };
+
+        def {
+            bindings = <&to 0>;
+            key-positions = <42 33>;
+        };
     };
 
     macros {
@@ -184,7 +194,7 @@
             >;
         };
 
-        layer_8 {
+        substance {
             bindings = <
 &trans  &trans  &trans  &trans     &trans                            &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &kp LC(Z)  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
