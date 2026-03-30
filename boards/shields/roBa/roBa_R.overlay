@@ -15,7 +15,27 @@
         ;
 };
 
-&xiao_serial { status = "disabled"; };
+/ {
+    /*
+     * zip_temp_layer の「ユーザー定義インスタンス」
+     * excluded-positions を効かせたいなら、こっちを作って参照するのが正攻法
+     */
+    /omit-if-no-ref/ my_temp_layer: my_temp_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        excluded-positions = <30 18 20 19 32 21>;
+        /* 必要なら:
+         * require-prior-idle-ms = <2000>;
+         */
+    };
+
+    trackball_listener {
+        status = "okay";
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        input-processors = <&my_temp_layer 4 10000>;
+    };
+};
 
 &pinctrl {
     spi0_default: spi0_default {
@@ -36,6 +56,8 @@
     };
 };
 
+&xiao_serial { status = "disabled"; };
+
 &spi0 {
     status = "okay";
     compatible = "nordic,nrf-spim";
@@ -50,24 +72,5 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-    };
-};
-
-/ {
-    /* zip_temp_layer を「自分用インスタンス」として定義（ここに excluded-positions を入れる） */
-    /omit-if-no-ref/ my_temp_layer: my_temp_layer {
-        compatible = "zmk,input-processor-temp-layer";
-        #input-processor-cells = <2>;
-        excluded-positions = <30 18 20 19 32 21>;
-        /* 必要なら:
-         * require-prior-idle-ms = <2000>;
-         */
-    };
-
-    trackball_listener {
-        status = "okay";
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-        input-processors = <&my_temp_layer 4 10000>;
     };
 };
