@@ -97,6 +97,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        alt_mb3: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &mkp MB3>;
+            label = "NEW_MACRO";
+        };
     };
 
     behaviors {
@@ -194,7 +201,7 @@
 &trans  &trans  &trans     &trans     &trans                        &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp LC(Y)  &kp LC(Z)  &trans    &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &kp F      &trans    &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &kp P      &mkp MB3  &kp X       &trans  &trans                          &trans
+&trans  &trans  &trans     &kp P      &alt_mb3  &kp X       &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT_BRACKET RIGHT_BRACKET>;
