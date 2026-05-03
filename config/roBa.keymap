@@ -198,10 +198,10 @@
 
         substance {
             bindings = <
-&trans  &trans  &trans     &trans     &trans                            &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LC(Y)  &kp LC(Z)  &trans        &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &kp F      &trans        &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &kp P      &kp LEFT_ALT  &kp X       &trans  &trans                          &trans
+&kp LC(S)  &trans  &trans     &kp LC(LS(R))  &trans                            &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &kp LC(Y)  &kp LC(Z)      &kp LC(D)     &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans     &kp LC(D)      &kp F         &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans     &kp P          &kp LEFT_ALT  &kp X       &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT_BRACKET RIGHT_BRACKET>;
