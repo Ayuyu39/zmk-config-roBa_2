@@ -20,7 +20,7 @@ trackball_listener {
     device = <&trackball>;
     
     // <layer_index timeout_ms>
-    input-processors = <&zip_temp_layer_threshold AML 30000>;
+    input-processors = <&zip_temp_layer_threshold MOUSE 30000>;
 };
 
 
