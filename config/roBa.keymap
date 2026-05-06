@@ -6,7 +6,6 @@
 
 #define MOUSE 4 // 各自のマウスレイヤーに合わせて設定
 
-
 &mkp_input_listener { input-processors = <&zip_temp_layer MOUSE 250>; };
 
 &mt {
@@ -32,7 +31,9 @@
 };
 
 / {
-    /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
+    /omit-if-no-ref/
+
+    zip_temp_layer: zip_temp_layer {
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
         require-prior-idle-ms = <500>;   // ← 非マウスキー後0.5秒はAMLを起動しない
@@ -101,6 +102,11 @@
         colon {
             bindings = <&kp COLON>;
             key-positions = <32 33>;
+        };
+
+        game_layer {
+            bindings = <&to 9>;
+            key-positions = <14 30>;
         };
     };
 
@@ -219,6 +225,15 @@
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT_BRACKET RIGHT_BRACKET>;
+        };
+
+        layer_9 {
+            bindings = <
+&kp Q      &kp W    &kp E     &kp R  &kp T                           &kp Y    &kp N1  &kp N2  &kp N3  &kp P
+&kp A      &kp S    &kp D     &kp F  &kp G      &kp H      &kp J     &kp K    &kp N4  &kp N5  &kp N6  &kp BSPC
+&kp LSHFT  &kp Z    &kp X     &kp C  &kp V      &kp B      &kp N     &kp M    &kp N7  &kp N8  &kp N9  &trans
+&kp LCTRL  &kp ESC  &kp LALT  &kp I  &kp SPACE  &kp M      &kp BSPC  &kp RET                          &trans
+            >;
         };
     };
 };
