@@ -25,13 +25,7 @@
 };
 
 
-trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
-    
-    // <layer_index timeout_ms>
-    input-processors = <&zip_temp_layer_threshold AML 30000>;
-};
+
 
 &pinctrl {
     spi0_default: spi0_default {
