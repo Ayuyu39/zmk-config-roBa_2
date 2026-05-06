@@ -45,12 +45,12 @@
         excluded-positions = <30 18 20 19 32 21 29 33>;
         
         // Don't activate if key was pressed within this time
-        // キー入力から300ms間はAMLを発動しない
-        require-prior-idle-ms = <300>;
+        // キー入力から100ms間はAMLを発動しない
+        require-prior-idle-ms = <100>;
         
         // Reset accumulated movement after this timeout
         // 蓄積された移動量をリセットするまでの時間
-        reset-timeout-ms = <200>;
+        reset-timeout-ms = <500>;
     };
 };
 
