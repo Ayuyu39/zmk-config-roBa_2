@@ -5,6 +5,8 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 4 // 各自のマウスレイヤーに合わせて設定
+#define AML 4  // Your AML layer index / AMLレイヤーのインデックス
+
 
 &mkp_input_listener { input-processors = <&zip_temp_layer MOUSE 250>; };
 
