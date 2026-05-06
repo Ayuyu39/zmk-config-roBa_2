@@ -15,12 +15,13 @@
             ;
 };
 
-trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
-    
-    // <layer_index timeout_ms>
-    input-processors = <&zip_temp_layer_threshold MOUSE 30000>;
+j/ {
+    trackball_listener {
+        status = "okay";
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        input-processors = <&zip_temp_layer 4 10000>,<&zip_temp_layer_threshold MOUSE 30000>;
+    };
 };
 
 
