@@ -71,7 +71,7 @@
 
         mouselook {
             bindings = <&kp A>;
-            key-positions = <30 18 20 19 32 21>;
+            key-positions = <30 18 20 19 32 21 29 33>;
         };
 
         scloll_test {
