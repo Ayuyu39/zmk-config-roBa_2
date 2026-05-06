@@ -20,7 +20,8 @@ j/ {
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_temp_layer 4 10000>,<&zip_temp_layer_threshold MOUSE 30000>;
+        input-processors = <&zip_temp_layer 4 10000>
+                         , <&zip_temp_layer_threshold AML 30000>;
     };
 };
 
