@@ -144,7 +144,7 @@
             bindings = <
 &kp Q      &kp W         &kp E         &kp R             &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O    &mt LS(LG(S)) P
 &kp A      &kp S         &kp D         &kp F             &kp G        &lt 6 LS(LG(S))         &mt PLUS MINUS            &kp H        &kp J  &kp K      &kp L    &kp SQT
-&kp Z      &kp X         &kp C         &kp V             &kp B        &kp LSHFT               &mt EXCLAMATION QUESTION  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LSHFT  &kp Z         &kp X         &kp C             &kp V        &kp B                   &mt EXCLAMATION QUESTION  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 LANG_HANJA  &lt 2 SPACE  &lt 3 LANG_HANGEUL      &kp BACKSPACE             &lt 1 ENTER                             &mt LS(LC(ESCAPE)) KP_DOT
             >;
 
@@ -229,9 +229,9 @@
 
         game {
             bindings = <
-&kp Q      &kp W    &kp E     &kp R           &kp T                             &kp N1   &kp N2  &kp N3  &kp O    &kp P
+&trans     &trans   &trans    &trans          &kp T                             &kp N1   &kp N2  &kp N3  &kp O    &kp P
 &kp A      &kp S    &kp D     &kp F           &kp G      &kp ESC      &kp J     &kp N4   &kp N5  &kp N6  &kp L    &kp BSPC
-&kp Z      &kp X    &kp C     &kp V           &kp B      &trans       &kp N     &kp N7   &kp N8  &kp N9  &kp DOT  &trans
+&trans     &trans   &trans    &trans          &trans     &trans       &kp N     &kp N7   &kp N8  &kp N9  &kp DOT  &trans
 &kp LCTRL  &kp ESC  &kp LALT  &kp LEFT_SHIFT  &kp SPACE  &kp M        &kp BSPC  &kp RET                           &trans
             >;
         };
