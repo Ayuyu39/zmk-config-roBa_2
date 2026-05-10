@@ -81,7 +81,7 @@
 
         mouselook {
             bindings = <&kp A>;
-            key-positions = <30 18 20 19 32 21 29 33>;
+            key-positions = <30 18 20 19 32 21 29 33 9 22 34 35 36 8 6 42>;
         };
 
         scloll_test {
@@ -182,10 +182,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans    &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &mkp MB1  &mkp MB3  &mkp MB2  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LEFT  &mkp MB4  &trans    &mkp MB5  &kp RIGHT
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                  &kp PERIOD
+&trans  &trans  &trans  &trans  &trans                      &trans    &kp LC(C)  &trans    &kp LC(V)  &kp LC(A)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &mkp MB1   &mkp MB3  &mkp MB2   &kp F5
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LEFT  &mkp MB4   &trans    &mkp MB5   &kp RIGHT
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                    &kp PERIOD
             >;
         };
 
