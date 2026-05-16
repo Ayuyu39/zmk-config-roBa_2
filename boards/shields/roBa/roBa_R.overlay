@@ -29,7 +29,7 @@
         
         // Key positions that won't deactivate the layer
         // 以下で指定したキー以外を押すとAML解除
-        excluded-positions = <30 18 20 19 32 21 29 33 9 22 34 35 36 8 6 42>;
+        excluded-positions = <30 18 20 19 32 21 29 33 9 22 34 35 36 8 7>;
         
         // Don't activate if key was pressed within this time
         // キー入力から100ms間はAMLを発動しない
@@ -58,7 +58,7 @@
 
 
 &zip_temp_layer {
-    excluded-positions = <30 18 20 19 32 21 29 33 9 22 34 35 36 8 6 42>;
+    excluded-positions = <30 18 20 19 32 21 29 33 9 22 34 35 36 8 7>;
 };
 
 
