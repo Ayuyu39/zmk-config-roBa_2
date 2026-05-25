@@ -157,9 +157,9 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R             &mt O T                                              &kp Y        &kp U  &lt 5 I    &kp O    &mt LS(LG(S)) P
-&kp A      &kp S         &kp D         &kp F             &mt H G      &lt 6 LS(LG(S))         &mt PLUS MINUS  &kp H        &kp J  &kp K      &kp L    &kp SQT
-&kp LSHFT  &kp Z         &kp X         &mt Y C           &mt N V      &mt M B                 &kp B           &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp Q      &kp W         &kp E         &kp R             &kp T                                                &kp Y        &kp U  &lt 5 I    &kp O    &mt LS(LG(S)) P
+&kp A      &kp S         &kp D         &kp F             &kp G        &lt 6 LS(LG(S))         &mt PLUS MINUS  &kp H        &kp J  &kp K      &kp L    &kp SQT
+&kp LSHFT  &kp Z         &kp X         &kp C             &kp V        &kp B                   &kp B           &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 LANG_HANJA  &lt 2 SPACE  &lt 3 LANG_HANGEUL      &kp BACKSPACE   &lt 1 ENTER                             &mt LS(LC(ESCAPE)) KP_DOT
             >;
 
