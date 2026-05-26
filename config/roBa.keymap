@@ -120,7 +120,7 @@
         };
 
         left_only-layer {
-            bindings = <&to 12>;
+            bindings = <&tog 12>;
             key-positions = <4 26>;
         };
 
