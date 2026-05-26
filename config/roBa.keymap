@@ -123,6 +123,16 @@
             bindings = <&to 12>;
             key-positions = <4 26>;
         };
+
+        win_right {
+            bindings = <&kp LC(LG(RIGHT))>;
+            key-positions = <25 39>;
+        };
+
+        win_left {
+            bindings = <&kp LC(LG(LEFT))>;
+            key-positions = <23 39>;
+        };
     };
 
     macros {
