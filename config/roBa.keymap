@@ -238,7 +238,7 @@
 
         substance {
             bindings = <
-&trans  &trans     &trans     &trans     &trans                            &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &kp LC(P)                         &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &kp LC(Y)  &kp LC(Z)  &kp LC(D)     &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LC(Z)  &kp LC(Y)  &kp LC(D)  &kp F         &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans     &kp P      &kp LEFT_ALT  &kp X       &trans  &trans                          &trans
