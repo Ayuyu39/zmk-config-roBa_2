@@ -51,12 +51,12 @@
 
         ctrl+tgab {
             bindings = <&kp LC(TAB)>;
-            key-positions = <12 11>;
+            key-positions = <12 13>;
         };
 
         tab {
             bindings = <&to_layer_0 TAB>;
-            key-positions = <13 12>;
+            key-positions = <12 11>;
         };
 
         double_quotation {
@@ -229,9 +229,9 @@
 
         number_left {
             bindings = <
-&kp N1         &kp N2     &kp N3     &kp O   &kp P                       &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
-&kp LC(LS(M))  &kp I      &kp J      &kp K   &kp H   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans         &kp LS(H)  &kp LA(H)  &kp Y   &kp N   &kp M       &trans  &trans  &trans  &trans  &trans  &trans
+&kp N1         &kp N2     &kp N3     &kp O   &kp P                       &kp N6  &kp N1  &kp N2  &kp N3  &kp N0
+&kp LC(LS(M))  &kp I      &kp J      &kp K   &kp H   &trans      &trans  &trans  &kp N4  &kp N5  &kp N6  &trans
+&trans         &kp LS(H)  &kp LA(H)  &kp Y   &kp N   &kp M       &trans  &trans  &kp N7  &kp N8  &kp N9  &kp N0
 &trans         &trans     &trans     &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
