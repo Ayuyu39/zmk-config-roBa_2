@@ -104,11 +104,6 @@
             key-positions = <32 33>;
         };
 
-        Non_Mouse_layer {
-            bindings = <&to 10>;
-            key-positions = <14 30>;
-        };
-
         Non_AML {
             bindings = <&to 10>;
             key-positions = <21 42>;
