@@ -130,7 +130,7 @@
         };
 
         game {
-            bindings = <&mo 9>;
+            bindings = <&to 9>;
             key-positions = <14 30>;
         };
     };
